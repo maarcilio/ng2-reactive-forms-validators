@@ -1,0 +1,27 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": false,
+    "sourceMap": true,
+    "declaration": false,
+    "outDir": "./dist",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.spec.ts",
+    "examples"
+  ],
+  "angularCompilerOptions": {
+    "strictMetadataEmit": true
+  }
+}

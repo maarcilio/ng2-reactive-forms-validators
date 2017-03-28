@@ -1,0 +1,55 @@
+{
+  "name": "ng2-reactive-forms-validators",
+  "version": "1.0.0",
+  "description": "Angular2 Validators (ReactiveFormsModule)",
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "lite": "lite-server",
+    "build": "ngc -p tsconfig.json",
+    "prepublish": "tsc",
+    "tsc": "tsc",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maarcilio/ng2-reactive-forms-validators"
+  },
+  "author": {
+    "name": "Marcilio Alves Castro",
+    "email": "marciliomac2@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maarcilio/ng2-reactive-forms-validators/issues"
+  },
+  "homepage": "https://github.com/maarcilio/ng2-reactive-forms-validators#ng2-reactive-forms-validators",
+  "main": "./dist/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@angular/common": "~2.4.1",
+    "@angular/compiler": "~2.4.1",
+    "@angular/compiler-cli": "~2.4.1",
+    "@angular/core": "~2.4.1",
+    "@angular/forms": "~2.4.1",
+    "@angular/platform-browser": "~2.4.1",
+    "@angular/platform-server": "~2.4.1",
+    "@angular/platform-browser-dynamic": "~2.4.1",
+    "rxjs": "5.0.1",
+    "typescript": "^2.2.2",
+    "zone.js": "^0.7.4",
+    "systemjs": "0.19.39",
+    "reflect-metadata": "^0.1.8",
+    "core-js": "^2.4.1",
+    "gulp": "^3.9.1",
+    "browser-sync": "^2.18.8",
+    "gulp-typescript": "^3.1.6",
+    "lite-server": "^2.2.2",
+    "concurrently": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
