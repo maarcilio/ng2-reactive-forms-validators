@@ -1,0 +1,23 @@
+<div class="container">
+    <form [formGroup]="form">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" class="form-control" formControlName="Name" name="Name" [(ngModel)]="Name">
+                <control-messages [control]="form.controls.Name" campo="Name"></control-messages>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" formControlName="SecondName" name="SecondName" [(ngModel)]="SecondName">
+                <control-messages [control]="form.controls.SecondName" campo="Second Name"></control-messages>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" class="form-control" formControlName="Email" name="Email" [(ngModel)]="Email">
+                <control-messages [control]="form.controls.Email" campo="Email"></control-messages>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Send">
+        </div>
+    </form>
+</div>
