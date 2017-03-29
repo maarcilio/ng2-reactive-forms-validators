@@ -1,7 +1,7 @@
 {
-  "name": "ng2-reactive-forms-validators",
-  "version": "1.0.0",
-  "description": "Angular2 Validators (ReactiveFormsModule)",
+  "name": "ng2-reactive-forms-validators-example",
+  "version": "1.1.0",
+  "description": "Angular2 Validators (ReactiveFormsModule) - Example",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "lite": "lite-server",
@@ -27,7 +27,9 @@
   },
   "homepage": "https://github.com/maarcilio/ng2-reactive-forms-validators#ng2-brvalidators",
   "main": "./dist/index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@types/node": "^7.0.12"
+  },
   "devDependencies": {
     "@angular/common": "~2.4.1",
     "@angular/compiler": "~2.4.1",
@@ -48,7 +50,7 @@
     "gulp-typescript": "^3.1.6",
     "lite-server": "^2.2.2",
     "concurrently": "^3.0.0",
-    "ng2-reactive-forms-validators": "1.0.1"
+    "ng2-reactive-forms-validators": "1.1.0"
   },
   "engines": {
     "node": ">=0.8.0"

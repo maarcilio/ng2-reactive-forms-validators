@@ -1,23 +1,64 @@
-<div class="container">
-    <form [formGroup]="form">
+<section class="container">
+    <h1 class="text-center"> Angular2 Validators (ReactiveFormsModule)</h1>
+    <hr>
+    <form [formGroup]="form" (ngSubmit)="send($event)">
         <div class="row">
             <div class="col-md-6">
+                <label for="Name">Name</label>
                 <input type="text" class="form-control" formControlName="Name" name="Name" [(ngModel)]="Name">
-                <control-messages [control]="form.controls.Name" campo="Name"></control-messages>
+                <control-messages [control]="form.controls.Name" fieldName="Name"></control-messages>
             </div>
             <div class="col-md-6">
+                <label for="SecondName">Second Name</label>
                 <input type="text" class="form-control" formControlName="SecondName" name="SecondName" [(ngModel)]="SecondName">
-                <control-messages [control]="form.controls.SecondName" campo="Second Name"></control-messages>
+                <control-messages [control]="form.controls.SecondName" fieldName="Second Name"></control-messages>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <input type="text" class="form-control" formControlName="Email" name="Email" [(ngModel)]="Email">
-                <control-messages [control]="form.controls.Email" campo="Email"></control-messages>
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" formControlName="Email" name="Email" [(ngModel)]="Email">
+                <control-messages [control]="form.controls.Email" fieldName="Email"></control-messages>
+            </div>
+            <div class="col-md-6">
+                <label for="Age">Age</label>
+                <input type="number" class="form-control" formControlName="Age" name="Age" [(ngModel)]="Age">
+                <control-messages [control]="form.controls.Age" fieldName="Age"></control-messages>
             </div>
         </div>
         <div class="row">
-            <input type="submit" value="Send">
+            <div class="col-md-6">
+                <label for="Password">Password</label>
+                <input type="password" class="form-control" formControlName="Password" name="Password" [(ngModel)]="Password">
+                <control-messages [control]="form.controls.Password" fieldName="Password"></control-messages>
+            </div>
+            <div class="col-md-6">
+                <label for="PasswordRepeat">Password Repeat</label>
+                <input type="password" class="form-control" formControlName="PasswordRepeat" name="PasswordRepeat" [(ngModel)]="PasswordRepeat">
+                <control-messages [control]="form.controls.PasswordRepeat" fieldName="Password Repeat"></control-messages>
+            </div>
         </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="Phone">Phone Number</label>
+                <input type="tel" class="form-control" formControlName="Phone" name="Phone" [(ngModel)]="Phone">
+                <control-messages [control]="form.controls.Phone" fieldName="Phone Number"></control-messages>
+            </div>
+            <div class="col-md-6">
+                <label for="Number">Number</label>
+                <input type="text" class="form-control" formControlName="Number" name="Number" [(ngModel)]="Number">
+                <control-messages [control]="form.controls.Number" fieldName="Number"></control-messages>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <label for="Description">Description</label>
+                <textarea class="form-control" formControlName="Description" name="Description" [(ngModel)]="Description"></textarea>
+                <control-messages [control]="form.controls.Description" fieldName="Description"></control-messages>
+            </div>
+        </div>
+        <hr>
+        <input type="submit" class="btn btn-success" value="Send">
+        <input type="reset" class="btn btn-danger" value="Reset">
     </form>
-</div>
+</section>

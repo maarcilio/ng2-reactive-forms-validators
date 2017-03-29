@@ -1,0 +1,19 @@
+.msg-error {
+      font-size: 12px;
+      color: #a94442;
+    }
+    
+    .ng-valid[required],
+    .ng-valid.required,
+    input.ng-valid,
+    textarea.ng-valid,
+    select.ng-valid {
+      border-left: 2px solid #42A948;
+      /* green */
+    }
+    
+    .ng-invalid:not(form),
+    input-data.ng-invalid input {
+      border-left: 2px solid #a94442;
+      /* red */
+    }

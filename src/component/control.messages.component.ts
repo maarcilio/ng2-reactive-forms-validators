@@ -4,8 +4,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
     selector: 'control-messages',
-    template: `<div class="msg-error" *ngIf="errorMessage !== null">{{errorMessage}}</div>`,
-    styles: ['.msg-error:font-size: 12px;color: #a94442;']
+    template: `<div class="msg-error" *ngIf="errorMessage !== null">{{errorMessage}}</div>`
 })
 export class ControlMessages {
     @Input() fieldName: string;
